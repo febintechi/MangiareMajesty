@@ -1,0 +1,25 @@
+.bannerFrame{
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
+}
+.banner{
+    max-width:100%;
+}
+body {
+    display: block;
+    margin: 0%;
+}
+/* IN SMALL SCREEN */
+@media (max-width: 700px) {
+    .banner{
+       width: 100%;
+       height: auto
+   
+    }
+    .bannerFrame{
+       width: 100%;
+       height: auto;
+       overflow-y: hidden;
+    }
+}

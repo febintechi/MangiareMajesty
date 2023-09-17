@@ -1,0 +1,85 @@
+/*DESKTOP STYLE*/
+.navbar {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 80px;
+    width: 100%;
+    overflow-y: hidden;
+  }
+ 
+  .navbar-brand {
+    text-align: left;
+    color: rgb(255, 184, 52);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    height: 5%;
+  }
+ 
+  .nav-link{
+    margin-right: 20px;
+    list-style: none;
+    color: rgb(249, 193, 61);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+ 
+ /* IN SMALL SCREEN */
+@media (max-width: 700px) {
+  .navbar {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 32px;
+    position: relative; /* Change to relative to position child elements */
+    height:auto;
+    max-width: 100%;
+    overflow-y: hidden;
+  }
+  .navbar-brand{
+      text-align: left;
+      color: rgb(255, 184, 52);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+  }
+  .navbar-toggler {
+    display: block;
+    color: rgb(249, 186, 10);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-nav{
+      position: static;
+      left: 10px;
+      line-height: 2.5;
+      margin-right: 20px;
+      list-style: none;
+      color: rgb(249, 193, 61);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      align-items:start;
+  }
+  .nav-link{
+      margin-right: 20px;
+      list-style: none;
+      color: rgb(249, 193, 61);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+  }
+  .collapse{
+    height: 15rem;
+  }
+}

@@ -1,0 +1,41 @@
+.description-head-box {
+    padding-top: 5%;
+}
+
+
+.description-Head {
+    color: #ed7905;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    text-align: center; /* Center the text horizontally */
+}
+
+
+.description-box {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.description {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center; /* Center the text horizontally */
+}
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 767px) { /* Adjust the max-width as needed */
+    .description-Head,
+    .description {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+
+.col-md-8 {
+    height: auto; /* Let the height adjust naturally */
+}
