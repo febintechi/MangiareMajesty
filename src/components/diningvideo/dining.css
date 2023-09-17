@@ -58,6 +58,8 @@
       justify-content: center;
       font-family: 'Pompiere', cursive;
       text-align: center;
+      font-size: 0.9rem;
+      padding-top: 2rem;
     }
     .aos-animate {
       opacity: 1 !important;
