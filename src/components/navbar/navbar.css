@@ -2,7 +2,7 @@
 .navbar {
     background-color: rgb(255, 255, 255);
     position: relative;
-    height: 80px;
+    height: 75px;
     width: 100%;
     overflow-y: hidden;
   }
@@ -40,20 +40,21 @@
     background-color: rgb(255, 255, 255);
     padding: 40px 32px;
     position: relative; /* Change to relative to position child elements */
-    height:auto;
+    height: auto;
     max-width: 100%;
     overflow-y: hidden;
   }
   .navbar-brand{
       text-align: left;
-      color: rgb(255, 184, 52);
+      color: rgb(255, 178, 35);
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.1rem;
       font-weight: bold;
   }
   .navbar-toggler {
     display: block;
-    color: rgb(249, 186, 10);
+    color: rgb(255, 195, 30);
+    background-color: rgb(253, 133, 58);
     font-size: 2rem;
     display: flex;
     align-items: center;

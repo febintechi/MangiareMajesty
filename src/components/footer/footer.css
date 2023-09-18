@@ -14,10 +14,46 @@
     .horizontal-line {
         display: flex;
         justify-content: center;
-        padding-bottom: 2rem;
     }
-    
-    
+    .social-media-icons{
+        display:flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .social-media-icons button {
+        font-size: 24px;
+        border: none; 
+        background-color: transparent; 
+        color: #010202; 
+    }
+    .social-media-icons button:hover {
+        color: #bcbcba;       
+    }
+
+    .menu-footer-btn{
+        display:flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .menu-footer-btn a {
+        text-decoration: none;
+        color: black;
+    }
+    .our-story-btn{
+        font-size: 0.9rem;
+    }
+    .careers-btn{
+        font-size: 0.9rem;
+    }
+    .contact-us-btn{
+        font-size: 0.9rem;
+    }
+    .news-btn{
+        font-size: 0.9rem;
+    }
+
     /* IN SMALL SCREEN  */
     @media (max-width: 786px){
         .division-flower{
@@ -33,6 +69,7 @@
                font-size: .7rem;
                padding-left: 0;
                padding-bottom:1rem;
+               padding-top: 1rem;
             }
             .hr{
                 color: black;
@@ -41,8 +78,37 @@
             .horizontal-line {
                 display: flex;
                 justify-content: center;
-                padding-bottom: 2rem;
             }
-           
+            .social-media-icons{
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                font-size: 11px; 
+                border: none; 
+                background-color: transparent; 
+                color: #010202; 
+                padding-top: 1rem;
+            }
+            .social-media-icons button:hover {
+                color: #bcbcba;       
+            }
+            .menu-footer-btn{
+                display:flex;
+                justify-content: center;
+            }
+            .our-story-btn{
+                font-size: 0.7rem;
+            }
+            .careers-btn{
+                font-size: 0.7rem;
+            }
+            .contact-us-btn{
+                font-size: 0.7rem;
+            }
+            .news-btn{
+                font-size: 0.7rem;
+            }
+        
     }
     
