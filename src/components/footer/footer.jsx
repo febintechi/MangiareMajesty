@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <div className='horizontal-line'><hr className='hr' /></div>
       
-      <div container className='menu-footer-btn'>
+      <div className='container menu-footer-btn'>
         <a href="/home">
           <h5 className='our-story-btn'>OUR STORY</h5>
         </a>

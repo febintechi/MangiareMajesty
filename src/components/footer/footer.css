@@ -1,114 +1,112 @@
-.division-flower{
+.division-flower {
+  text-align: center;
+  padding: 2rem 0; /* Adjust padding top and bottom */
+}
+
+.copyright {
+  float: right;
+  padding-left: 1rem;
+}
+
+.hr {
+  color: black;
+  width: 80%;
+}
+
+.horizontal-line {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.social-media-icons button {
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  color: #010202;
+}
+
+.social-media-icons button:hover {
+  color: #bcbcba;
+}
+
+.menu-footer-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.menu-footer-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Adjust font sizes for menu buttons */
+.our-story-btn,
+.careers-btn,
+.contact-us-btn,
+.news-btn {
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 786px) {
+  .division-flower {
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    }
-    .copyright{
-        float: right;
-        padding-left: 1rem;
-    }
-    .hr{
-        color: black;
-        width: 80%;
-    }
-    .horizontal-line {
-        display: flex;
-        justify-content: center;
-    }
-    .social-media-icons{
-        display:flex;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-    }
-    .social-media-icons button {
-        font-size: 24px;
-        border: none; 
-        background-color: transparent; 
-        color: #010202; 
-    }
-    .social-media-icons button:hover {
-        color: #bcbcba;       
-    }
+    padding: 2rem 0;
+  }
 
-    .menu-footer-btn{
-        display:flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .menu-footer-btn a {
-        text-decoration: none;
-        color: black;
-    }
-    .our-story-btn{
-        font-size: 0.9rem;
-    }
-    .careers-btn{
-        font-size: 0.9rem;
-    }
-    .contact-us-btn{
-        font-size: 0.9rem;
-    }
-    .news-btn{
-        font-size: 0.9rem;
-    }
+  .copyright-box {
+    display: flex;
+    justify-content: center;
+  }
 
-    /* IN SMALL SCREEN  */
-    @media (max-width: 786px){
-        .division-flower{
-            text-align: center;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            }
-            .copyright-box{
-                display: flex;
-                justify-content: center;
-            }
-            .copyright{
-               font-size: .7rem;
-               padding-left: 0;
-               padding-bottom:1rem;
-               padding-top: 1rem;
-            }
-            .hr{
-                color: black;
-                width: 80%;
-            }
-            .horizontal-line {
-                display: flex;
-                justify-content: center;
-            }
-            .social-media-icons{
-                display: flex;
-                gap: 1rem;
-                justify-content: center;
-                align-items: center;
-                font-size: 11px; 
-                border: none; 
-                background-color: transparent; 
-                color: #010202; 
-                padding-top: 1rem;
-            }
-            .social-media-icons button:hover {
-                color: #bcbcba;       
-            }
-            .menu-footer-btn{
-                display:flex;
-                justify-content: center;
-            }
-            .our-story-btn{
-                font-size: 0.7rem;
-            }
-            .careers-btn{
-                font-size: 0.7rem;
-            }
-            .contact-us-btn{
-                font-size: 0.7rem;
-            }
-            .news-btn{
-                font-size: 0.7rem;
-            }
-        
-    }
-    
+  .copyright {
+    font-size: 0.7rem;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    float: none; /* Remove float for small screens */
+  }
+
+  .horizontal-line {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: none;
+    background-color: transparent;
+    color: #010202;
+    padding-top: 1rem;
+  }
+
+  .social-media-icons button:hover {
+    color: #bcbcba;
+  }
+
+  .menu-footer-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Adjust font sizes for menu buttons */
+  .our-story-btn,
+  .careers-btn,
+  .contact-us-btn,
+  .news-btn {
+    font-size: 0.7rem;
+  }
+}
