@@ -1,0 +1,26 @@
+.card{
+    text-align: center;
+    margin: 0.5rem;
+    width: 300px;
+    height: auto;
+}
+.breakfast-page-body{
+    text-align: center;
+}
+.card-body{
+    text-align: center;
+}
+.breakfast-body{
+    padding-top: 2rem;
+}
+.div.row.card-box{
+    margin-left: 0%;
+    padding-right: 0%;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+a.active{
+    color:black;
+}

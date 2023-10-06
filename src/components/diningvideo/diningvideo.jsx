@@ -1,10 +1,6 @@
 import React from 'react';
 
 
-
-
-
-
 const Diningvideo = () => {
   return (
     <div className="container">
