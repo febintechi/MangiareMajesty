@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+
+import Home from './pages/homepage/Home';
 import Navbar from './components/navbar/navbar';
 import Menu from './components/menu/Menu'; 
 import WineList from './components/wineList/WineList';
 import Reservations from './components/reservations/Reservations';
-import Home from './pages/homepage/Home';
 import Footer from './pages/footerpage/footerpage';
 import Errorpage from './components/errorPage/Errorpage';
 
@@ -23,8 +24,9 @@ const App = () => {
 
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
           
+          <Route path="/MangiareMajesty" element={<Home />} />
+          <Route path="/" element={<Home />} />
              
             <Route path="/ordernow" element={<CategoryNavbar />}>
               <Route index element={<BreakfastPage />} />
@@ -35,7 +37,6 @@ const App = () => {
               <Route path="cake" element={<CakesPage />} />
             </Route>
   
-
           <Route path="/menu" element={<Menu />} />
           <Route path="/winelist" element={<WineList />} />
           <Route path="/reservation" element={<Reservations />} />
