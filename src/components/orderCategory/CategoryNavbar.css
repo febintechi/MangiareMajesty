@@ -1,16 +1,17 @@
 .order-catogry {
-    color: rgb(245, 242, 242);
+    color:white;
     text-decoration: none;
     padding: 1rem;
     font-weight: 700;
-  }
+    position: relative;
+}
   
 .ordernow-bar-box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
+}
 .center-links{
     align-items: center;
     justify-content: center;
@@ -23,7 +24,6 @@
 }
 .fluibox{
     background: linear-gradient(45deg, #e06b0c, #bebebe);
-
     height: 100%;
     width: 50%;
     border-radius: 15px;
@@ -39,13 +39,7 @@ a:hover {
 .order-catogry.active{
     color: #000000;
 }
-.order-catogry {
-    color: rgb(249, 245, 245);
-    text-decoration: none;
-    padding: 1rem;
-    font-weight: 700;
-    position: relative; /* Add this */
-}
+
   
 .order-catogry::before {
     content: "";
@@ -58,12 +52,16 @@ a:hover {
     transform-origin: 100% 50%;
     transform: scaleX(0);
     transition: transform 0.3s ease; /* Add a transition for the transform property */
-}
-  
+}  
 .order-catogry:hover::before {
     transform: scaleX(1);
 }
-  
+.cart-icon{
+  margin-left: 4rem;
+}
+.cart-user{
+    margin-left: 2rem;
+}
 /* IN SMALL SCREEN */
 @media (max-width: 700px) {
     .navbar>.container-fluid{
@@ -74,19 +72,29 @@ a:hover {
         margin-left: 0%;
     }
     .order-catogry {
-        color: black;
+        color: rgb(248, 244, 244);
         text-decoration: none;
         padding: 0.5rem;
-        font-weight: 600;
+        font-size:1rem;
         font-size: 0.65rem;
         display: inline;
+        position: relative;
     }
     .fluibox{
-        background-color: rgb(218, 213, 213);
+        background-color: rgb(254, 254, 254);
         height: 100%;
         width: 100%;
         border-radius: 15px;
         padding-top: 0%;
         margin-top: 0%;
+    }
+    .cart-icon{
+        margin-left: 7.5rem;
+        margin-top: 1rem;
+    }
+    .cart-user{
+          margin-left:2rem;
+          margin-bottom: 1rem;
+          margin-top: 0.9rem;
     }
 }

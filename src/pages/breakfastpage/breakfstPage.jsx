@@ -1,5 +1,5 @@
 import React from 'react';
-import BreakfastListed from '../../components/breakfast/breakfastListed';
+import BreakfastListed from '../../components/breakfast/breakfastParent';
 
 const BreakfastPage = () => {
   return (

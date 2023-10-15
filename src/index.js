@@ -9,8 +9,7 @@ import "./components/description/description.css";
 import "./components/diningvideo/dining.css";
 import "./components/footer/footer.css";
 
-import "./components/breakfast/breakfastListed.css";
-import "./components/4pmSnacks/snacks.css";
+import "./components/breakfast/breakfast.css";
 import "./components/lunch/lunch.css";
 
 

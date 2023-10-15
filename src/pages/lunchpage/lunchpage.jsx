@@ -1,5 +1,5 @@
 import React from 'react'
-import Lunchthumbnails from '../../components/lunch/lunchthumbnails';
+import Lunchthumbnails from '../../components/lunch/lunchParent';
 
 
 const Lunchpage = () => {

@@ -13,7 +13,7 @@
     text-align: center;
     
 }
-.lunch-body{
+.breakfast-body{
     padding-top: 2rem;
    
 }
@@ -29,3 +29,4 @@ a:-webkit-any-link {
 a.active{
     color:black;
 }
+

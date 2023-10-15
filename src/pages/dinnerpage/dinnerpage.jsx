@@ -1,5 +1,5 @@
 import React from 'react';
-import DinnerThumbnails from '../../components/dinner/dinnerThumbnails'; 
+import DinnerThumbnails from '../../components/dinner/dinnerParent'; 
 
 const DinnerPage = () => {
   return (

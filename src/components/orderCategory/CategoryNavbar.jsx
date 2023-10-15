@@ -1,5 +1,8 @@
 import React from 'react';
 import { NavLink,Outlet} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-regular-svg-icons';
+import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
 
 
 const CategoryNavbar = () => {
@@ -22,8 +25,15 @@ const CategoryNavbar = () => {
                 <NavLink className="order-catogry" to="/orderNow/dinner">Dinner</NavLink>
               </li>
               <li className="nav-item-order">
-                <NavLink className="order-catogry" to="/orderNow/cake">Cake & Pastry</NavLink>
+                <NavLink className="order-catogry" to="/orderNow/cake">Cakes</NavLink>
               </li>
+              <li className='cart-icon'>
+                <NavLink><FontAwesomeIcon icon={faCartShopping} style={{ color: 'white' }} /></NavLink>
+              </li>
+              <li className='cart-user'>
+               <NavLink><FontAwesomeIcon icon={faUser} style={{ color: 'white' }} /></NavLink>
+              </li>
+
             </ul>
           </div>
         </div>

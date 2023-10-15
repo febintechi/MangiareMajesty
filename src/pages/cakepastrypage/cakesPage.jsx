@@ -1,5 +1,5 @@
 import React from 'react';
-import CakesThumbnails from '../../components/cakes/CakesThumbnails'
+import CakesThumbnails from '../../components/cakes/cakeParent'
 
 
 const CakesPage = () => {
