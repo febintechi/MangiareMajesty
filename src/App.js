@@ -10,12 +10,17 @@ import Reservations from './components/reservations/Reservations';
 import Footer from './pages/footerpage/footerpage';
 import Errorpage from './components/errorPage/Errorpage';
 
+
 import CategoryNavbar from './components/orderCategory/CategoryNavbar';
 import BreakfastPage from './pages/breakfastpage/breakfstPage';
 import Lunchpage from './pages/lunchpage/lunchpage';
 import SnacksPage from './pages/snackpage/snacksPage.jsx';
 import DinnerPage from './pages/dinnerpage/dinnerpage';
 import CakesPage from './pages/cakepastrypage/cakesPage';
+
+
+import CartPageFinal from './pages/cartPageFinal/cartPageFinal.jsx'
+
 
 
 const App = () => {
@@ -35,9 +40,11 @@ const App = () => {
               <Route path="snack" element={<SnacksPage />} />
               <Route path="dinner" element={<DinnerPage />} />
               <Route path="cake" element={<CakesPage />} />
+              
             </Route>
-  
+            
           <Route path="/menu" element={<Menu />} />
+          <Route path="cart" element={<CartPageFinal />} />
           <Route path="/winelist" element={<WineList />} />
           <Route path="/reservation" element={<Reservations />} />
           <Route path="*" element={<Errorpage />} />

@@ -1,23 +1,25 @@
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
 const Product = (props) => {
-  const { id, productName, price, productImage,bfcardDetails } = props.data;
+  const { id, productName, price, productImage, bfcardDetails } = props.data;
+
 
   return (
     <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-     <div className="card-body">
-        <img src={productImage} alt={id} className='card-img-top' />
+      <div className="card-body">
+        <img src={productImage} alt={id} className="card-img-top" />
         <h5>€ {price}</h5>
         <h5 className="card-title">{productName}</h5>
-        <p className="card-details">{ bfcardDetails}</p>
-        <button className="btn btn-outline-warning">
-          <NavLink to="/cart">ADD TO CART</NavLink>
-        </button> 
+        <p className="card-details">{bfcardDetails}</p>
+        <NavLink to="/cart" className="btn btn-outline-warning">
+          ADD TO CART
+        </NavLink>
       </div>
     </div>
   );
 };
+
 
 export default Product;

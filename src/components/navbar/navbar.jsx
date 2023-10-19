@@ -15,7 +15,7 @@ const Navbar = () => {
         <button className="navbar-toggler" type="button" onClick={toggleMenu}></button>
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`}>
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item"><NavLink className="nav-link" to="/orderNow">Order Now</NavLink></li>
+            <li className="nav-item"><NavLink className="nav-link" to="/orderNow/breakfast">Order Now</NavLink></li>
             <li className="nav-item"><NavLink className="nav-link" to="/menu">Menu</NavLink></li>
             <li className="nav-item"><NavLink className="nav-link" to="/winelist">Wine List</NavLink></li>
             <li className="nav-item"><NavLink className="nav-link" to="/reservation">Reservations</NavLink></li>

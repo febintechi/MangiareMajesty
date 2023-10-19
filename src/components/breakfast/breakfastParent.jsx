@@ -9,7 +9,7 @@ const BreakfastListed = () => {
     <div className="container breakfast-body">
       <div className='row card-box'>
         {PRODUCTS.map((product) => (
-          <Product data={product} />
+          <Product key={product.id} data={product} />
         ))}
         
       </div>

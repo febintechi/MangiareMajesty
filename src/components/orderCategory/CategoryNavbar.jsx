@@ -44,4 +44,3 @@ const CategoryNavbar = () => {
 };
 
 export default CategoryNavbar;
-
