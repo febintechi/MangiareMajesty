@@ -1,0 +1,83 @@
+.cartpage-body {
+    background-color: rgb(249, 248, 247);
+    height: auto;
+ 
+}
+.cartpage-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.cards-box{
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.cart-card{
+    height: 30rem;
+    width: 60%;
+    border-radius: 1%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color:rgb(255, 254, 254);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+   
+}
+.checkout-card {
+    width: 30%;
+    height: 10rem;
+    margin: 2rem;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+.myplate {
+    padding: 1rem;
+    text-align: center;
+}
+.total{
+    padding: 1rem;
+}
+.foodon-plate {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.plate-itemcard img {
+ 
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.productdetail-box {
+    text-align: left;
+    padding: 1rem;
+}
+.quantiy-icon{
+    padding-left: 5rem;
+    padding-right: 1rem;
+}
+.quntity-num{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+.trash-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 7rem;
+}
+.minus-quatity{
+    border: none;
+    background-color: white;
+}
+.plus-quantity{
+    border: none;
+    background-color: white;
+}

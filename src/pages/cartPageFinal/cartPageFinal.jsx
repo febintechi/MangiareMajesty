@@ -1,11 +1,12 @@
 import React from 'react'
-import CartPage from '../../components/cartPage/cartpage'
+import CartPage from '../../components/cartPage/cartpage';
 
-
-const CartPageFinal = () => {
+const cartPageFinal = () => {
   return (
-    <CartPage />
+    <div>
+      <CartPage />
+    </div>
   )
 }
 
-export default CartPageFinal
+export default cartPageFinal

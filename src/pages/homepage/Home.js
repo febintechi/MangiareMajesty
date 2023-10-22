@@ -1,7 +1,7 @@
 import React from 'react'
 
 import OpeningBanner from '../../components/banner/openingbanner';
-import TileImages from '../../components/tilesbelowbanner/TileImages';
+import TileImages from '../../components/tilesbelowbanner/tileimages.jsx'
 import Description from '../../components/description/description';
 import Diningvideo from '../../components/diningvideo/diningvideo';
 
