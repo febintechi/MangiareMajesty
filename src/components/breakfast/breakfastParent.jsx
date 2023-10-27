@@ -1,6 +1,6 @@
 
 import React from "react";
-import { PRODUCTS } from "../../data/breakfastData/products";
+import { BREAKFASTITEMS } from "../../data/breakfastData/products";
 import Product from "./breakfastChild";
 import "./breakfast.css"; 
 
@@ -8,7 +8,7 @@ const BreakfastListed = () => {
   return (
     <div className="container breakfast-body">
       <div className='row card-box'>
-        {PRODUCTS.map((product) => (
+        {BREAKFASTITEMS.map((product) => (
           <Product key={product.id} data={product} />
         ))}
         

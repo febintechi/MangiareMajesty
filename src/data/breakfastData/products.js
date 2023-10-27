@@ -8,7 +8,7 @@ import Frittata from './breakfastImages/7.jpg';
 import YogurtFrutta from './breakfastImages/8.jpg';
 
 
-export const PRODUCTS =[
+export const BREAKFASTITEMS =[
     {
         id:1,
         productName:"Banana Pancake",
