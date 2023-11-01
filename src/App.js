@@ -25,6 +25,7 @@ import CartPageFinal from './pages/cartPageFinal/cartPageFinal.jsx'
 
 const App = () => {
   return (
+    
     <Router>
 
         <Navbar />
@@ -51,6 +52,7 @@ const App = () => {
         </Routes>
         <Footer />
     </Router>
+
   );
 };
 

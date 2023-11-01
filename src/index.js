@@ -16,11 +16,15 @@ import "./components/lunch/lunch.css";
 import "./components/orderCategory/CategoryNavbar.css";
 import './components/cartPage/cartpage.css'
 
+import CartProvider from './components/context/cartContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ <React.StrictMode>
+    <CartProvider>
+      <App />
+    </CartProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
