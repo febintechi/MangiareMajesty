@@ -4,8 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
 
+import { CartContext } from '../context/cartContext';
+import { useContext } from 'react';
 
 const CategoryNavbar = () => {
+   
+  const { cartItems } = useContext(CartContext);
+  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
+
+
+
   return (
     <div>
       <nav className="navbar order-bar">
@@ -28,7 +36,10 @@ const CategoryNavbar = () => {
                 <NavLink className="order-catogry" to="/orderNow/cake">Cakes</NavLink>
               </li>
               <li className='cart-icon'>
-                <NavLink><FontAwesomeIcon icon={faCartShopping} style={{ color: 'white' }} /></NavLink>
+                <NavLink to="/cart" >
+                  <FontAwesomeIcon icon={faCartShopping} style={{ color: 'white' }} />
+                  <span className='cart-total--item'>{totalQuantity}</span>
+                </NavLink>
               </li>
               <li className='cart-user'>
                <NavLink><FontAwesomeIcon icon={faUser} style={{ color: 'white' }} /></NavLink>

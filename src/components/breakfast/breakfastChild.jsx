@@ -15,7 +15,7 @@ const Product = (props) => {
         <h5 className="card-title">{productName}</h5>
         <p className="card-details">{bfcardDetails}</p>
 
-        <NavLink to="/cart" className="btn btn-outline-warning" onClick={() => cart.addOneToCart(id)}>
+        <NavLink className="btn btn-outline-warning" onClick={() => cart.addOneToCart(id)}>
           ADD TO CART
         </NavLink>
       </div>

@@ -1,10 +1,21 @@
 import React, { useContext } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { CartContext } from '../context/cartContext';
+import {faXmark} from '@fortawesome/free-solid-svg-icons';
+
+import { useNavigate } from 'react-router-dom';
+
 
 const Cartpage = () => {
+
+    const navigate = useNavigate();
+    const handleCloseClick = () => {
+        navigate(-1);
+    };
+    
     const cart = useContext(CartContext);
 
     const calculateTotalPrice = () => {
@@ -17,9 +28,16 @@ const Cartpage = () => {
                 <div className='row cards-box'>
                     <div className='cart-card'>
                         <div className="myplate">
-                            <h5>MY PLATE</h5>
+                            <h5>MY PLATE</h5> 
                         </div>
-                        <Scrollbars style={{ height: 400 }}>
+                        <div >
+                          <button onClick={handleCloseClick} className='cart-page-close'>
+                            <FontAwesomeIcon icon={faXmark} />
+                          </button>  
+                        
+                        </div>
+                        <div className="container cart-item-box">
+                        <Scrollbars style={{ height: 350 }}>
                             {cart.cartItems.map((product) => {
                                 const { id, productName, price, productImage, bfcardDetails, quantity } = product;
 
@@ -45,13 +63,14 @@ const Cartpage = () => {
                                             <span>Quantity is 0</span>
                                         )}
 
-                                        <button className='trash-button' onClick={() => cart.removeFromCart(id)}>
+                                        <button className='trash-button' onClick={() => cart.deleteFromCart(id)}>
                                             <FontAwesomeIcon icon={faTrashCan} />
                                         </button>
                                     </div>
                                 );
                             })}
                         </Scrollbars>
+                        </div>
                     </div>
                     <div className='checkout-card'>
                         <div className='total'>

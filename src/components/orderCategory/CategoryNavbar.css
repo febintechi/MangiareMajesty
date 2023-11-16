@@ -62,6 +62,16 @@ a:hover {
 .cart-user{
     margin-left: 2rem;
 }
+.cart-total--item {
+    position: absolute; 
+    border-radius: 50%;
+    background-color: #ea3a04;
+    color: white;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-style: bold;
+}
 /* IN SMALL SCREEN */
 @media (max-width: 700px) {
     .navbar>.container-fluid{
