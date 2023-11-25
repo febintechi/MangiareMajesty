@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
 import { CartContext } from '../context/cartContext';
 
 const Product = (props) => {
@@ -15,9 +14,9 @@ const Product = (props) => {
         <h5 className="card-title">{productName}</h5>
         <p className="card-details">{bfcardDetails}</p>
 
-        <NavLink className="btn btn-outline-warning" onClick={() => cart.addOneToCart(id)}>
+        <button className="btn btn-outline-warning" onClick={() => cart.addOneToCart(id)}>
           ADD TO CART
-        </NavLink>
+        </button>
       </div>
     </div>
   );

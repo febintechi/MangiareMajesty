@@ -19,7 +19,8 @@ const CategoryNavbar = () => {
       <nav className="navbar order-bar">
         <div className="container-fluid fluibox">
           <div className="ordernow-bar-box">
-            <ul className="nav">
+            <ul className="nav ordernow-options">
+              
               <li className="nav-item-order">
                 <NavLink className="order-catogry" to="/orderNow/breakfast">Breakfast</NavLink>
               </li>
@@ -35,6 +36,7 @@ const CategoryNavbar = () => {
               <li className="nav-item-order">
                 <NavLink className="order-catogry" to="/orderNow/cake">Cakes</NavLink>
               </li>
+              
               <li className='cart-icon'>
                 <NavLink to="/cart" >
                   <FontAwesomeIcon icon={faCartShopping} style={{ color: 'white' }} />
@@ -44,7 +46,7 @@ const CategoryNavbar = () => {
               <li className='cart-user'>
                <NavLink><FontAwesomeIcon icon={faUser} style={{ color: 'white' }} /></NavLink>
               </li>
-
+              
             </ul>
           </div>
         </div>

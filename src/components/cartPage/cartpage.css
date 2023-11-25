@@ -1,98 +1,199 @@
 .cartpage-body {
     background-color: rgb(249, 248, 247);
+    padding: 30px;
     height: auto;
- 
+   
 }
-.cartpage-box {
+.raw-outer-box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+    gap: 30px;
 }
-
-.cards-box{
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-}
-.cart-card{
-    height: 30rem;
-    width: 60%;
-    border-radius: 1%;
+.cart-card {
+    flex: 1 1 0; /* Allow flexibility in width */
+    max-width: 60%; /* Limit maximum width */
+    height: auto; /* Let it grow vertically based on content */
+    border-radius: 5px; 
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background-color:rgb(255, 254, 254);
+    background-color: rgb(255, 254, 254);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
     position: relative;
+    padding: 20px;
 }
-.cart-page-close {
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: rgb(255, 115, 28);
-    font-size:1.5rem;
-}
-
 .checkout-card {
-    width: 30%;
-    height: 10rem;
-    margin: 2rem;
+    flex: 1 1 0; /* Allow flexibility in width */
+    max-width: 40%; /* Limit maximum width */
+    height: auto; /* Let it grow vertically based on content */
+    margin: 2rem 0; /* Adjust margins for centering */
     background-color: rgb(255, 254, 254);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
     text-align: center;
+    border-radius: 5px; 
+    padding: 20px;
 }
 
-
-.myplate {
-    padding: 1rem;
-    text-align: center;
-    color: rgb(255, 115, 28);
-    margin-top: 1rem;
-}
-
-.total{
-    padding: 1rem;
-}
-.foodon-plate {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
+/* Adjustments for specific elements within the card */
 .plate-itemcard img {
- 
     border-radius: 10px;
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
-.productdetail-box {
-    text-align: left;
+.myplate {
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.myplateHead{
+    color: rgb(255, 115, 28);
+   
+}
+.cart-page-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(255, 115, 28);
+    font-size: 1.2rem;
+}
+.total {
     padding: 1rem;
 }
-.quantiy-icon{
-    padding-left: 5rem;
-    padding-right: 1rem;
+
+.foodon-plate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc; /* Optional: add a border between items */
 }
-.quntity-num{
+.productdetail-box {
+    align-items: center;
+    padding: 1rem;
+    flex-grow: 1;
+}
+.quantity-section {
+    display: flex;
+    align-items: center;
+}
+.quantiy-icon {
+    padding-left: 3rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+.quantity-num {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
 }
-.trash-button{
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-left: 4rem;
+.quantity-controls {
+    display: flex;
+    align-items: center;
 }
-.minus-quatity{
+.trash-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 4rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+}
+.minus-quantity {
     border: none;
     background-color: white;
 }
-.plus-quantity{
+.plus-quantity {
     border: none;
     background-color: white;
+}
+.Product-controls {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .myplate {
+        font-size: 10px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .myplateHead{
+        color: rgb(255, 115, 28);
+        font-size: 0.9rem;
+    }
+    .totalHead{
+        font-size: 0.9rem;
+    }
+    .raw-outer-box {
+        flex-direction: column; /* Change to a vertical layout */
+        align-items: center; /* Center items horizontally */
+    }
+    .cart-card,
+    .checkout-card {
+        max-width: 100%; 
+        margin: 1rem 0; 
+    }
+    .prouct-box-full{
+        flex-direction: column; /* Change to a vertical layout */
+        align-items: flex-start;
+    }
+    .minus-quantity {
+        border: none;
+        background-color: white;
+        font-size: 1rem;
+    }
+    .plus-quantity {
+        font-size: 1rem;
+    }
+    .quantiy-icon{
+        font-size: 1rem;
+    }
+    .productName{
+        font-size: 1rem;
+    }
+    .productDetails{
+        font-size: 0.8rem;
+    }
+    .price{
+        font-size: 0.8rem ;
+    }
+    .trash-button{
+        font-size: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left:2rem;
+        padding-left: none;
+        padding-right: none;
+    }
+    .quantity-section {
+        display: flex;
+        flex-direction: column; /* Align quantity elements vertically */
+    }
+   
+   
+    .foodon-plate {
+        flex-direction:row; /* Change to a vertical layout */
+    }
+
+    .quantity-section {
+        display: flex;
+        flex-direction: column; /* Align quantity elements vertically */
+    }
+    .quantity-controls {
+        display: flex;
+        align-items: center; /* Align controls in the center */
+    }
+    
+    .Product-controls {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
 }

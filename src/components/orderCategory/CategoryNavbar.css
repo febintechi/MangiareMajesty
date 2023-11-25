@@ -76,19 +76,19 @@ a:hover {
 @media (max-width: 700px) {
     .navbar>.container-fluid{
         display:inline-block;
-        align-items: center;
-        justify-content: space-between;
         padding-left: 0%;
         margin-left: 0%;
+    }
+    .ordernow-options{
+        justify-content: center;
+        text-align: center;
     }
     .order-catogry {
         color: rgb(248, 244, 244);
         text-decoration: none;
         padding: 0.5rem;
-        font-size:1rem;
-        font-size: 0.65rem;
-        display: inline;
-        position: relative;
+        font-size:0.7rem;
+    
     }
     .fluibox{
         background-color: rgb(254, 254, 254);
@@ -99,7 +99,7 @@ a:hover {
         margin-top: 0%;
     }
     .cart-icon{
-        margin-left: 7.5rem;
+        font-size:1rem;
         margin-top: 1rem;
     }
     .cart-user{
@@ -107,4 +107,5 @@ a:hover {
           margin-bottom: 1rem;
           margin-top: 0.9rem;
     }
+   
 }
