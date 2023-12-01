@@ -13,14 +13,14 @@ const CategoryNavbar = () => {
   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
 
 
-
   return (
-    <div>
+    <div className='row col-sm-12 col-md-12 col-lg-12'>
       <nav className="navbar order-bar">
         <div className="container-fluid fluibox">
-          <div className="ordernow-bar-box">
-            <ul className="nav ordernow-options">
-              
+         
+          <ul className="nav ordernow-option-mainbox ">
+
+            <div className='ordernow-options'>
               <li className="nav-item-order">
                 <NavLink className="order-catogry" to="/orderNow/breakfast">Breakfast</NavLink>
               </li>
@@ -36,19 +36,22 @@ const CategoryNavbar = () => {
               <li className="nav-item-order">
                 <NavLink className="order-catogry" to="/orderNow/cake">Cakes</NavLink>
               </li>
-              
+            </div>
+
+            <div className='d-flex catnav-icon-box'>
               <li className='cart-icon'>
                 <NavLink to="/cart" >
-                  <FontAwesomeIcon icon={faCartShopping} style={{ color: 'white' }} />
-                  <span className='cart-total--item'>{totalQuantity}</span>
+                <FontAwesomeIcon icon={faCartShopping} style={{ color: 'white' }} />
+                <span className='cart-total--item'>{totalQuantity}</span>
                 </NavLink>
               </li>
               <li className='cart-user'>
-               <NavLink><FontAwesomeIcon icon={faUser} style={{ color: 'white' }} /></NavLink>
+                <NavLink><FontAwesomeIcon icon={faUser} style={{ color: 'white' }} /></NavLink>
               </li>
-              
-            </ul>
-          </div>
+            </div>
+ 
+          </ul>
+          
         </div>
       </nav>
       <Outlet />
@@ -57,3 +60,4 @@ const CategoryNavbar = () => {
 };
 
 export default CategoryNavbar;
+
