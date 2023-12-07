@@ -7,11 +7,11 @@ import "./dinner.css";
 const dinnerParent = () => {
   return (
     <div className='container lunch-body'>
-        <div className='row card-box'>
-          {DINNERITEMS.map((dinnerItems)=> (
-            <DinnerChild data={dinnerItems} />
-          ))}
-        </div>
+      <div className='row card-box'>
+        {DINNERITEMS.map((dinnerItems)=> (
+          <DinnerChild data={dinnerItems} />
+        ))}
+      </div>
     </div>
   )
 }

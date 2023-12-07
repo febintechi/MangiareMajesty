@@ -1,6 +1,6 @@
 
 import React from "react";
-import { BREAKFASTITEMS } from "../../data/breakfastData/products";
+import { BREAKFASTITEMS } from "../../data/breakfastData/breakfastData";
 import Product from "./breakfastChild";
 import "./breakfast.css"; 
 

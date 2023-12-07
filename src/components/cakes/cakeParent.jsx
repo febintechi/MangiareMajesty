@@ -10,7 +10,7 @@ const cakeParent = () => {
     <div className='row card-box'>
      {CAKEITEMS.map((cakeItems)=>(
         <CakeItems  data ={cakeItems} />
-     ))}
+      ))}
     </div>
 </div>
   )

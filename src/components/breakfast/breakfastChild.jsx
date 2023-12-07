@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { CartContext } from '../context/cartContext';
 
 const Product = (props) => {
-  const { id, productName, price, productImage, bfcardDetails } = props.data;
+  const { itemType, id, productName, price, productImage, cardDetails } = props.data;
   const cart = useContext(CartContext);
   console.log(cart.items);
 
@@ -12,9 +12,10 @@ const Product = (props) => {
         <img src={productImage} alt={id} className="card-img-top" />
         <h5>€ {price}</h5>
         <h5 className="card-title">{productName}</h5>
-        <p className="card-details">{bfcardDetails}</p>
+        <p className="card-details">{cardDetails}</p>
 
-        <button className="btn btn-outline-warning" onClick={() => cart.addOneToCart(id)}>
+        <button className="btn btn-outline-warning" onClick={() =>{ console.log("Add to Cart clicked for ID:", id); 
+         cart.addOneToCart(itemType,id)}}>
           ADD TO CART
         </button>
       </div>

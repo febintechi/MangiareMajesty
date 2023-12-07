@@ -8,7 +8,7 @@ const lunchParent = () => {
     <div className="container lunch-body">
     <div className='row card-box'>
       {LUNCHITEMS.map((lunchitems) => (
-        <Lunchitems data={lunchitems} />
+        <Lunchitems key={lunchitems.id} data={lunchitems} />
       ))}
       
     </div>

@@ -13,58 +13,66 @@ export const LUNCHITEMS =[
     
     {
         id:9,
+        itemType:'lunch',
         productName:"Arancini",
         price:20,
         productImage:Arancini,
-        bfcardDetails:"Deep fried rice cutlets stuffed meat sauce"
+        cardDetails:"Deep fried rice cutlets stuffed meat sauce"
     },
     {
         id:10,
+        itemType:'lunch',
         productName:"Caprese Salad",
         price:19,
         productImage:Salad,
-        bfcardDetails:"Simple salad made with fresh tomatoes"
+        cardDetails:"Simple salad made with fresh tomatoes"
     },
     {
         id:11,
+        itemType:'lunch',
         productName:"Lasagna",
         price:25,
         productImage:Lasagna,
-        bfcardDetails:"Layers of wide flat pasta"
+        cardDetails:"Layers of wide flat pasta"
     },
     {
         id:12,
+        itemType:'lunch',
         productName:"Panini Sandwich",
         price:28,
         productImage:PaniniSandwich,
-        bfcardDetails:"Grilled sandwiches with Italian bread"
+        cardDetails:"Grilled sandwiches with Italian bread"
     },
     {
         id:13,
+        itemType:'lunch',
         productName:"Pizza Margherita",
         price:27,
         productImage:PizzaMargherita,
-        bfcardDetails:"Classic Italian pizza"
+        cardDetails:"Classic Italian pizza"
     },
     {
         id:14,
+        itemType:'lunch',
         productName:"Minestrone",
         price:30,
         productImage:Minestrone,
-        bfcardDetails:"Hearty vegetable soup"
+        cardDetails:"Hearty vegetable soup"
     },
     {
         id:15,
+        itemType:'lunch',
         productName:"Shrimp Risotto",
         price:35,
         productImage:ShrimpRisotto,
-        bfcardDetails:"Risotto ai Frutti di Mare (with seafood)"
+        cardDetails:"Risotto ai Frutti di Mare (with seafood)"
     },
     {
         id:16,
+        itemType:'lunch',
         productName:"Pasta Carbonara",
         price:30,
         productImage:PastaCarbonara,
-        bfcardDetails:"Spaghetti pasta with a creamy sauce"
+        cardDetails:"Spaghetti pasta with a creamy sauce"
     }
 ]

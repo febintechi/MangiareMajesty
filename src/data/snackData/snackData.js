@@ -13,58 +13,66 @@ export const SNACKITEMS =[
     
     {
         id:17,
+        itemType:'snacks',
         productName:"Biscotti",
         price:5,
         productImage:Biscotti,
-        bfcardDetails:"Italian cookies that are twice-baked"
+        cardDetails:"Italian cookies that are twice-baked"
     },
     {
         id:18,
+        itemType:'snacks',
         productName:"Bruschetta",
         price:5,
         productImage:Bruschetta,
-        bfcardDetails:"Toasted bread topped diced tomatoes"
+        cardDetails:"Toasted bread topped diced tomatoes"
     },
     {
         id:19,
+        itemType:'snacks',
         productName:"Focaccia",
         price:6,
         productImage:Focaccia,
-        bfcardDetails:"Flatbread topped olive oil & herbs"
+        cardDetails:"Flatbread topped olive oil & herbs"
     },
     {
         id:20,
+        itemType:'snacks',
         productName:"Crostini",
         price:10,
         productImage:Crostini,
-        bfcardDetails:"Small slices of toasted bread"
+        cardDetails:"Small slices of toasted bread"
     },
     {
         id:21,
+        itemType:'snack',
         productName:"Tiramisu",
         price:11,
         productImage:Tiramisu,
-        bfcardDetails:"A classic Italian dessert"
+        cardDetails:"A classic Italian dessert"
     },
     {
         id:22,
+        itemType:'snacks',
         productName:"Pizzette",
         price:17,
         productImage:Pizzette,
-        bfcardDetails:"Miniature pizzas"
+        cardDetails:"Miniature pizzas"
     },
     {
         id:23,
+        itemType:'snacks',
         productName:"Panzerotti",
         price:5,
         productImage:Panzerotti,
-        bfcardDetails:"Small calzones"
+        cardDetails:"Small calzones"
     },
     {
         id:24,
+        itemType:'snacks',
         productName:"Taralli",
         price:5,
         productImage:Taralli,
-        bfcardDetails:"Crunchy snack"
+        cardDetails:"Crunchy snack"
     }
 ]

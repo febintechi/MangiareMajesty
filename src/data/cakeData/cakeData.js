@@ -13,58 +13,66 @@ export const CAKEITEMS =[
     
     {
         id:33,
+        itemType:'cakes',
         productName:"Regina Rosey",
         price:30,
         productImage:Calamari,
-        bfcardDetails:"Made with Fresh cherry & Rose petals"
+        cardDetails:"Made with Fresh cherry & Rose petals"
     },
     {
         id:34,
+        itemType:'cakes',
         productName:"Arnia Cheese",
         price:35,
         productImage:Quattro ,
-        bfcardDetails:"Combination of honey and chese"
+        cardDetails:"Combination of honey and chese"
     },
     {
         id:35,
+        itemType:'cakes',
         productName:"Ricotta Cheese cake",
         price:25,
         productImage:Osso,
-        bfcardDetails:"Blending Cheese and Chocolate"
+        cardDetails:"Blending Cheese and Chocolate"
     },
     {
         id:36,
+        itemType:'cakes',
         productName:"Raspberry Chocolate",
         price:28,
         productImage:Parmesan,
-        bfcardDetails:"Rasberry & Chocolate in redwine"
+        cardDetails:"Rasberry & Chocolate in redwine"
     },
     {
         id:37,
+        itemType:'cakes',
         productName:"Macaroons",
         price:15,
         productImage:PannaCotta,
-        bfcardDetails:"Delicious almond meringue cookies"
+        cardDetails:"Delicious almond meringue cookies"
     },
     {
         id:38,
+        itemType:'cakes',
         productName:"Zeppole",
         price:11,
         productImage:Linguine,
-        bfcardDetails:"Traditional Italian pastry"
+        cardDetails:"Traditional Italian pastry"
     },
     {
         id:39,
+        itemType:'cake',
         productName:"Sfogliatella",
         price:15,
         productImage:Polenta,
-        bfcardDetails:"Originated in the Southern Italy"
+        cardDetails:"Originated in the Southern Italy"
     },
     {
         id:40,
+        itemType:'cakes',
         productName:"Cannoli",
         price:20,
         productImage:Fettuccine,
-        bfcardDetails:"Originated in Sicilyn"
+        cardDetails:"Originated in Sicilyn"
     }
 ]

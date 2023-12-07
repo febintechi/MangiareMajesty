@@ -15,6 +15,7 @@ import "./components/lunch/lunch.css";
 
 import "./components/orderCategory/CategoryNavbar.css";
 import './components/cartPage/cartpage.css'
+import './components/wineList/winelist.css'
 
 import CartProvider from './components/context/cartContext';
 

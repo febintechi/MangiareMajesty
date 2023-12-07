@@ -13,58 +13,66 @@ export const DINNERITEMS =[
     
     {
         id:25,
+        itemType:'dinner',
         productName:"Calamari Fritti",
         price:23,
         productImage:Calamari,
-        bfcardDetails:"Fried squid rings with marinara sauce"
+        cardDetails:"Fried squid rings with marinara sauce"
     },
     {
         id:26,
+        itemType:'dinner',
         productName:"Quattro Formaggi",
         price:28,
         productImage:Quattro ,
-        bfcardDetails:"pizza topped with tomatoes"
+        cardDetails:"pizza topped with tomatoes"
     },
     {
         id:27,
+        itemType:'dinner',
         productName:"Osso Buco",
         price:35,
         productImage:Osso,
-        bfcardDetails:"Braised veal shanks with white wine"
+        cardDetails:"Braised veal shanks with white wine"
     },
     {
         id:28,
+        itemType:'dinner',
         productName:"Parmesan",
         price:20,
         productImage:Parmesan,
-        bfcardDetails:"Bread & fried eggplant slices"
+        cardDetails:"Bread & fried eggplant slices"
     },
     {
         id:29,
+        itemType:'dinner',
         productName:"Panna Cotta",
         price:15,
         productImage:PannaCotta,
-        bfcardDetails:"Creamy dessert with strawberry"
+        cardDetails:"Creamy dessert with strawberry"
     },
     {
         id:30,
+        itemType:'dinner',
         productName:"Linguine Vongle",
         price:30,
         productImage:Linguine,
-        bfcardDetails:"Linguine pasta with fresh clams"
+        cardDetails:"Linguine pasta with fresh clams"
     },
     {
         id:31,
+        itemType:'dinner',
         productName:"Polenta",
         price:30,
         productImage:Polenta,
-        bfcardDetails:"Cornmeal porridge with various sauces"
+        cardDetails:"Cornmeal porridge with various sauces"
     },
     {
         id:32,
+        itemType:'dinner',
         productName:"Fettuccine Alfredo",
         price:28,
         productImage:Fettuccine,
-        bfcardDetails:"Flat pasta in parmesan"
+        cardDetails:"Flat pasta in parmesan"
     }
 ]

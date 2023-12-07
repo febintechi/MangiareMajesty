@@ -1,3 +1,4 @@
+
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -33,43 +34,39 @@ const Cartpage = () => {
                         
                          <Scrollbars style={{ height: 350 }}>
                             {cart.cartItems.map((product) => {
-                                const { id, productName, price, productImage, bfcardDetails, quantity } = product;
+                                const { itemType, id, productName, price, productImage, cardDetails, quantity } = product;
 
                                 return (
                                     <div className='foodon-plate' key={id}>
-
                                         <div className=' prouct-box-full'>
-                                        <div className='plate-itemcard'>
-                                            <img src={productImage} alt={productName} className='plate-image' />
+                                            <div className='plate-itemcard'>
+                                                <img src={productImage} alt={productName} className='plate-image' />
+                                            </div>
+                                            <div className='productdetail-box'>
+                                                <h5 className='productName'>{productName}</h5>
+                                                <h6 className='productDetails'>{cardDetails}</h6>
+                                                <h6 className='price'>€ {price}</h6>
+                                            </div>
                                         </div>
-                                        <div className='productdetail-box'>
-                                            <h5 className='productName'>{productName}</h5>
-                                            <h6 className='productDetails'>{bfcardDetails}</h6>
-                                            <h6 className='price'>€ {price}</h6>
-                                        </div>
-                                        </div>
-
                                         <div className='Product-controls'>
-                                        <h6 className='quantiy-icon'>Qty</h6>
-                                        {quantity > 0 ? (
+                                            <h6 className='quantiy-icon'>Qty</h6>
+                                            {quantity > 0 ? (
                                                 <>
-                                                    <button className='minus-quantity' onClick={() => cart.removeOneFromCart(id)}>-</button>
+                                                    <button className='minus-quantity' onClick={() => cart.removeOneFromCart(itemType, id)}>-</button>
                                                     <p className='quantity-num'>{quantity}</p>
-                                                    <button className='plus-quantity' onClick={() => cart.addOneToCart(id)}>+</button>
+                                                    <button className='plus-quantity' onClick={() => cart.addOneToCart(itemType, id)}>+</button>
                                                 </>
                                             ) : (
-                                            <span>Quantity is 0</span>
-                                        )}
-                                        <button className='trash-button' onClick={() => cart.deleteFromCart(id)}>
+                                                <span>Quantity is 0</span>
+                                            )}
+                                            <button className='trash-button' onClick={() => cart.deleteFromCart(itemType, id)}>
                                                 <FontAwesomeIcon icon={faTrashCan} />
-                                        </button>
+                                            </button>
                                         </div>
-   
                                     </div>
                                 );
                             })}
                         </Scrollbars>
-                        
                     </div>
 
                     <div className="checkout-card col-12 col-lg-6 text-center">
@@ -77,7 +74,6 @@ const Cartpage = () => {
                             <h5 className='totalHead'>TOTAL: € {calculateTotalPrice()}</h5>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -85,4 +81,3 @@ const Cartpage = () => {
 };
 
 export default Cartpage;
-
