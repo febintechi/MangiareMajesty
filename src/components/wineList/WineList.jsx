@@ -1,6 +1,6 @@
 import React from 'react'
 import WineBanner from '../../data/winelistData/winelistImages/Winelistbanner.jpg'
-import Winelist from '../../data/winelistData/winelistImages/WineList.jpg';
+import Winelist from '../../data/winelistData/winelistImages/winelistpage1.png';
 
 
 const WineList = () => {

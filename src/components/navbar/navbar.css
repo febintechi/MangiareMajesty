@@ -9,7 +9,7 @@
  
   .navbar-brand {
     text-align: left;
-    color: rgb(255, 184, 52);
+    color: rgb(249, 131, 13);
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -28,7 +28,7 @@
   .nav-link{
     margin-right: 20px;
     list-style: none;
-    color: rgb(249, 193, 61);
+    color: rgb(249, 131, 13);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -53,8 +53,8 @@
   }
   .navbar-toggler {
     display: block;
-    color: rgb(255, 195, 30);
-    background-color: rgb(253, 133, 58);
+    color: rgb(249, 131, 13);
+    background-color: rgb(249, 131, 13);
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@
       line-height: 2.5;
       margin-right: 20px;
       list-style: none;
-      color: rgb(249, 193, 61);
+      color: rgb(249, 131, 13);
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1rem;
@@ -75,7 +75,7 @@
   .nav-link{
       margin-right: 20px;
       list-style: none;
-      color: rgb(249, 193, 61);
+      color: rgb(249, 131, 13);
       text-decoration: none;
       font-weight: bold;
       font-size: 0.8rem;

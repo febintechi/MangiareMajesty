@@ -3,7 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import FooterFlower from './footer flower.png'
 
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className='footer-main-box'>
       <div className='container'>
         <div className='division-flower'>
-          <img width="79" height="23" src="https://osteriafrancescana.it/wp-content/uploads/2017/03/osteriafrancescana_3stelle-michelin.png" class="vc_single_image-img attachment-thumbnail" alt="Osteria Francescana - Massimo Bottura - Modena, Italy" loading="lazy"></img>
+          <img width="79" height="30" src={FooterFlower} class="vc_single_image-img attachment-thumbnail" alt="Osteria Francescana - Massimo Bottura - Modena, Italy" loading="lazy"></img>
         </div>
         <div className='horizontal-line'><hr className='hr' /></div>
       
