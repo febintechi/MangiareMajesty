@@ -17,6 +17,7 @@ import "./components/orderCategory/CategoryNavbar.css";
 import './components/cartPage/cartpage.css'
 import './components/wineList/winelist.css'
 import './components/menu/menu.css'
+import './components/reservations/Reservations.css'
 
 import CartProvider from './components/context/cartContext';
 
