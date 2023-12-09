@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/MangiareMajesty/static/css/main.259a6671.css",
-    "main.js": "/MangiareMajesty/static/js/main.18802f3a.js",
+    "main.css": "/MangiareMajesty/static/css/main.a5d8c441.css",
+    "main.js": "/MangiareMajesty/static/js/main.68d53f9d.js",
     "static/media/MENU 2ND PAGE.jpg": "/MangiareMajesty/static/media/MENU 2ND PAGE.5f0bbabdedf6d1409bbd.jpg",
+    "static/media/MENU 3RD PAGE.jpg": "/MangiareMajesty/static/media/MENU 3RD PAGE.04c80273aa368162ee7c.jpg",
     "static/media/avocado-tortilla.jpg": "/MangiareMajesty/static/media/avocado-tortilla.7fe17819ce7c8583db4d.jpg",
     "static/media/17.jpg": "/MangiareMajesty/static/media/17.864cf84d5dd05ed45816.jpg",
     "static/media/winelistpage1.png": "/MangiareMajesty/static/media/winelistpage1.18e53a683a55c37d963a.png",
@@ -20,6 +21,7 @@
     "static/media/32.jpg": "/MangiareMajesty/static/media/32.8c25822b18c8014e6ce5.jpg",
     "static/media/39.jpg": "/MangiareMajesty/static/media/39.cf101dc3fbf1da148538.jpg",
     "static/media/25.jpg": "/MangiareMajesty/static/media/25.262283c18ea89056a060.jpg",
+    "static/media/Reservation banner.jpg": "/MangiareMajesty/static/media/Reservation banner.bfd0d0fe041f18ace82c.jpg",
     "static/media/28.jpg": "/MangiareMajesty/static/media/28.d933f854f6507e81c753.jpg",
     "static/media/15.jpg": "/MangiareMajesty/static/media/15.fc7214af3a2a6bc20b0a.jpg",
     "static/media/40.jpg": "/MangiareMajesty/static/media/40.0c5c82f1601149e1c204.jpg",
@@ -53,11 +55,11 @@
     "static/media/7.jpg": "/MangiareMajesty/static/media/7.c875c70c9e0e00e510c9.jpg",
     "static/media/8.jpg": "/MangiareMajesty/static/media/8.8702ee9b9c128aedd663.jpg",
     "index.html": "/MangiareMajesty/index.html",
-    "main.259a6671.css.map": "/MangiareMajesty/static/css/main.259a6671.css.map",
-    "main.18802f3a.js.map": "/MangiareMajesty/static/js/main.18802f3a.js.map"
+    "main.a5d8c441.css.map": "/MangiareMajesty/static/css/main.a5d8c441.css.map",
+    "main.68d53f9d.js.map": "/MangiareMajesty/static/js/main.68d53f9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.259a6671.css",
-    "static/js/main.18802f3a.js"
+    "static/css/main.a5d8c441.css",
+    "static/js/main.68d53f9d.js"
   ]
 }
