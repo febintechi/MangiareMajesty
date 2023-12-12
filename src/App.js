@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
+
 import Home from './pages/homepage/Home';
 import Navbar from './components/navbar/navbar';
 import Menu from './components/menu/Menu'; 
@@ -22,8 +23,9 @@ import CakesPage from './pages/cakepastrypage/cakesPage';
 import CartPageFinal from './pages/cartPageFinal/cartPageFinal.jsx'
 
 
-
 const App = () => {
+
+
   return (
     
     <Router>
@@ -32,6 +34,7 @@ const App = () => {
         <Routes>
           
           <Route path="/MangiareMajesty" element={<Home />} />
+        
           <Route path="/" element={<Home />} />
              
             <Route path="/ordernow" element={<CategoryNavbar />}>
@@ -49,7 +52,9 @@ const App = () => {
           <Route path="/winelist" element={<WineList />} />
           <Route path="/reservation" element={<Reservations />} />
           <Route path="*" element={<Errorpage />} />
+          
         </Routes>
+       
         <Footer />
     </Router>
 
