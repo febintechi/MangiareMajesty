@@ -25,7 +25,6 @@ import CartPageFinal from './pages/cartPageFinal/cartPageFinal.jsx'
 
 const App = () => {
 
-
   return (
     
     <Router>
