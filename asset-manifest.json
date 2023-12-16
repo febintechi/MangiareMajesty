@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MangiareMajesty/static/css/main.56302cb9.css",
-    "main.js": "/MangiareMajesty/static/js/main.372ced45.js",
+    "main.css": "/MangiareMajesty/static/css/main.cfe0ae83.css",
+    "main.js": "/MangiareMajesty/static/js/main.234cfe95.js",
     "static/media/MENU 2ND PAGE.jpg": "/MangiareMajesty/static/media/MENU 2ND PAGE.5f0bbabdedf6d1409bbd.jpg",
     "static/media/MENU 3RD PAGE.jpg": "/MangiareMajesty/static/media/MENU 3RD PAGE.04c80273aa368162ee7c.jpg",
     "static/media/Ordernowposter.jpg": "/MangiareMajesty/static/media/Ordernowposter.c4ed636e0a1d728d7771.jpg",
@@ -56,11 +56,11 @@
     "static/media/7.jpg": "/MangiareMajesty/static/media/7.c875c70c9e0e00e510c9.jpg",
     "static/media/8.jpg": "/MangiareMajesty/static/media/8.8702ee9b9c128aedd663.jpg",
     "index.html": "/MangiareMajesty/index.html",
-    "main.56302cb9.css.map": "/MangiareMajesty/static/css/main.56302cb9.css.map",
-    "main.372ced45.js.map": "/MangiareMajesty/static/js/main.372ced45.js.map"
+    "main.cfe0ae83.css.map": "/MangiareMajesty/static/css/main.cfe0ae83.css.map",
+    "main.234cfe95.js.map": "/MangiareMajesty/static/js/main.234cfe95.js.map"
   },
   "entrypoints": [
-    "static/css/main.56302cb9.css",
-    "static/js/main.372ced45.js"
+    "static/css/main.cfe0ae83.css",
+    "static/js/main.234cfe95.js"
   ]
 }
