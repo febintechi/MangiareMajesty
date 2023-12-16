@@ -13,6 +13,8 @@ import Errorpage from './components/errorPage/Errorpage';
 
 
 import CategoryNavbar from './components/orderCategory/CategoryNavbar';
+import AddedToCartNotification from './components/addedToCartNotificationBar/addedTocartNotification.jsx';
+
 import BreakfastPage from './pages/breakfastpage/breakfstPage';
 import Lunchpage from './pages/lunchpage/lunchpage';
 import SnacksPage from './pages/snackpage/snacksPage.jsx';
@@ -22,43 +24,43 @@ import CakesPage from './pages/cakepastrypage/cakesPage';
 
 import CartPageFinal from './pages/cartPageFinal/cartPageFinal.jsx'
 
-
 const App = () => {
-
   return (
-    
     <Router>
-
-        <Navbar />
-        <Routes>
-          
-          <Route path="/MangiareMajesty" element={<Home />} />
-        
-          <Route path="/" element={<Home />} />
-             
-            <Route path="/ordernow" element={<CategoryNavbar />}>
-              <Route index element={<BreakfastPage />} />
-              <Route path="breakfast" element ={<BreakfastPage />} />
-              <Route path="lunch" element={<Lunchpage />} />
-              <Route path="snack" element={<SnacksPage />} />
-              <Route path="dinner" element={<DinnerPage />} />
-              <Route path="cake" element={<CakesPage />} />
-              
-            </Route>
-            
-          <Route path="/menu" element={<Menu />} />
-          <Route path="cart" element={<CartPageFinal />} />
-          <Route path="/winelist" element={<WineList />} />
-          <Route path="/reservation" element={<Reservations />} />
-          <Route path="*" element={<Errorpage />} />
-          
-        </Routes>
-       
-        <Footer />
+      <Navbar />
+      <Routes>
+        <Route path="/MangiareMajesty" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/ordernow/*" element={<CategoryPages />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="cart" element={<CartPageFinal />} />
+        <Route path="/winelist" element={<WineList />} />
+        <Route path="/reservation" element={<Reservations />} />
+        <Route path="*" element={<Errorpage />} />
+      </Routes>
+      <Footer />
     </Router>
+  );
+};
 
+const CategoryPages = () => {
+  return (
+    <>
+      <CategoryNavbar />
+      
+      <Routes>
+        <Route index element={<BreakfastPage />} />
+        <Route path="breakfast" element={<BreakfastPage />} />
+        <Route path="lunch" element={<Lunchpage />} />
+        <Route path="snack" element={<SnacksPage />} />
+        <Route path="dinner" element={<DinnerPage />} />
+        <Route path="cake" element={<CakesPage />} />
+      </Routes>
+      <AddedToCartNotification />
+    </>
   );
 };
 
 export default App;
+
 

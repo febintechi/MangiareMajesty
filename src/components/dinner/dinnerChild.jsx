@@ -17,7 +17,7 @@ const DinnerChild = (props) => {
           console.log("Add to Cart clicked for ID:", id);
           cart.addOneToCart(itemType, id);
           }}>
-          TO CART
+          ADD TO CART
         </button>
       </div>
     </div>

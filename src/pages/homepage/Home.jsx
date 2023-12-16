@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowModal(true);
-    }, 9000); // 9 milliseconds = 2000 microseconds
+    }, 5000); 
 
     return () => clearTimeout(timeout);
   }, []);

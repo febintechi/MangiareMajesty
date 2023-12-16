@@ -39,7 +39,7 @@
   .navbar {
     background-color: rgb(255, 255, 255);
     padding: 40px 32px;
-    position: relative; /* Change to relative to position child elements */
+    position: relative; 
     height: auto;
     max-width: 100%;
     overflow-y: hidden;
