@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/MangiareMajesty/static/css/main.cfe0ae83.css",
-    "main.js": "/MangiareMajesty/static/js/main.234cfe95.js",
+    "main.js": "/MangiareMajesty/static/js/main.8c2da2d0.js",
     "static/media/MENU 2ND PAGE.jpg": "/MangiareMajesty/static/media/MENU 2ND PAGE.5f0bbabdedf6d1409bbd.jpg",
     "static/media/MENU 3RD PAGE.jpg": "/MangiareMajesty/static/media/MENU 3RD PAGE.04c80273aa368162ee7c.jpg",
-    "static/media/Ordernowposter.jpg": "/MangiareMajesty/static/media/Ordernowposter.c4ed636e0a1d728d7771.jpg",
     "static/media/avocado-tortilla.jpg": "/MangiareMajesty/static/media/avocado-tortilla.7fe17819ce7c8583db4d.jpg",
     "static/media/17.jpg": "/MangiareMajesty/static/media/17.864cf84d5dd05ed45816.jpg",
     "static/media/winelistpage1.png": "/MangiareMajesty/static/media/winelistpage1.18e53a683a55c37d963a.png",
@@ -44,6 +43,7 @@
     "static/media/29.jpg": "/MangiareMajesty/static/media/29.b3c7fb21e23e1d5e7fe3.jpg",
     "static/media/34.jpg": "/MangiareMajesty/static/media/34.045ce65ab806ef0a93df.jpg",
     "static/media/38.jpg": "/MangiareMajesty/static/media/38.d4e969b613b68e8eafe0.jpg",
+    "static/media/Ordernowposter.jpg": "/MangiareMajesty/static/media/Ordernowposter.535c91c99eb44ace7cef.jpg",
     "static/media/13.jpg": "/MangiareMajesty/static/media/13.21dc2d013ffb6d83c40b.jpg",
     "static/media/37.jpg": "/MangiareMajesty/static/media/37.042d5abe3e084c95a23c.jpg",
     "static/media/11.jpg": "/MangiareMajesty/static/media/11.b713c508cb937c0ad5fa.jpg",
@@ -57,10 +57,10 @@
     "static/media/8.jpg": "/MangiareMajesty/static/media/8.8702ee9b9c128aedd663.jpg",
     "index.html": "/MangiareMajesty/index.html",
     "main.cfe0ae83.css.map": "/MangiareMajesty/static/css/main.cfe0ae83.css.map",
-    "main.234cfe95.js.map": "/MangiareMajesty/static/js/main.234cfe95.js.map"
+    "main.8c2da2d0.js.map": "/MangiareMajesty/static/js/main.8c2da2d0.js.map"
   },
   "entrypoints": [
     "static/css/main.cfe0ae83.css",
-    "static/js/main.234cfe95.js"
+    "static/js/main.8c2da2d0.js"
   ]
 }
