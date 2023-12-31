@@ -22,7 +22,8 @@ import './components/reservations/Reservations.css'
 import CartProvider from './components/context/cartContext';
 
 import './components/OrdernowPopUp/OrdernowModal.css';
-import './components/addedToCartNotificationBar/addedTocartNotification.css'
+import './components/addedToCartNotificationBar/addedTocartNotification.css';
+import './components/filter/filterOption.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

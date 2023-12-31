@@ -1,0 +1,12 @@
+.dropdown{
+    padding-left: 10%;
+    border-radius: 15px;
+    width: fit-content;
+    }
+    .dropdown:hover{
+        color: rgb(156, 156, 156);
+    }
+    .btn{
+        border-color: rgb(161, 161, 161);
+        border-radius: 10px;
+    }

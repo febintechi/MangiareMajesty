@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from '../context/cartContext';
 
-const Product = (props) => {
+const BreakFastItems = (props) => {
   const { itemType, id, productName, price, productImage, cardDetails } = props.data;
   const cart = useContext(CartContext);
   console.log(cart.items);
@@ -23,4 +23,4 @@ const Product = (props) => {
   );
 };
 
-export default Product;
+export default BreakFastItems;
