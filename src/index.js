@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+
 import App from './App';
 
 import "./components/navbar/navbar.css";
@@ -20,6 +21,7 @@ import './components/menu/menu.css'
 import './components/reservations/Reservations.css'
 
 import CartProvider from './components/context/cartContext';
+import { FilterProvider } from './components/filterContext/filterContext';
 
 import './components/OrdernowPopUp/OrdernowModal.css';
 import './components/addedToCartNotificationBar/addedTocartNotification.css';
@@ -29,7 +31,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <React.StrictMode>
     <CartProvider>
-      <App />
+      <FilterProvider>
+        <App />
+      </FilterProvider>
     </CartProvider>
   </React.StrictMode>,
   document.getElementById('root')
