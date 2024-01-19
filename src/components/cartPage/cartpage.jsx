@@ -5,6 +5,9 @@ import { faTrashCan, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { CartContext } from '../context/cartContext';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+
 
 const Cartpage = () => {
     const navigate = useNavigate();
@@ -17,7 +20,7 @@ const Cartpage = () => {
     const calculateTotalPrice = () => {
         return cart.cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
     };
-
+    
     return (
         <div className='cartpage-body'>
             <div className="container-fluid">
@@ -31,8 +34,8 @@ const Cartpage = () => {
                                 <FontAwesomeIcon icon={faTimes} />
                             </button>
                         </div>
-                        
-                         <Scrollbars style={{ height: 350 }}>
+                        {cart.cartItems.length > 0 ? (
+                        <Scrollbars style={{ height: 350 }}>
                             {cart.cartItems.map((product) => {
                                 const { itemType, id, productName, price, productImage, cardDetails, quantity } = product;
 
@@ -57,16 +60,28 @@ const Cartpage = () => {
                                                     <button className='plus-quantity' onClick={() => cart.addOneToCart(itemType, id)}>+</button>
                                                 </>
                                             ) : (
-                                                <span>Quantity is 0</span>
+                                               <h4>Emty</h4>
                                             )}
                                             <button className='trash-button' onClick={() => cart.deleteFromCart(itemType, id)}>
                                                 <FontAwesomeIcon icon={faTrashCan} />
                                             </button>
                                         </div>
                                     </div>
+                                   
                                 );
                             })}
                         </Scrollbars>
+                        ) : (
+                            <>
+                            <span>Your Plate is empty. Let's fill it up with delicious goodies!</span>
+                            <Link to="/ordernow/breakfast" className='discoverbtn'>
+                            <button className="btn discBtn">
+                              Discover New Flavors
+                            </button>
+                            </Link>
+                        </>
+                        )}
+                      
                     </div>
 
                     <div className="checkout-card col-12 col-lg-6 text-center">
